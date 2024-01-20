@@ -1,0 +1,62 @@
+fun rapot(name : String, nilai : Int, rangking : Int) {
+    println("nilai $name totalnya $nilai mendapat rangking $rangking")
+}
+fun sekola(name : String, jurusan : String) {
+    println("$name, jurusan $jurusan di SMKN9")
+}
+
+fun lulus (name: String, mm : Int, inggris : Int, indo : Int, pkn : Int, lulus : String) :String{
+    return "\nSiswa bernama $name dengan deskripsi nilai berikut : \nNilai matematika $mm \nnilai b.inggris $inggris \nnilai b.indo $indo \nnilai pkn $pkn \ndinyatakan $lulus"
+}
+fun tambah(nilaia: Int, nilaib: Int) : Int{
+    return nilaia + nilaib
+}
+
+fun kurang(nilaia: Int, nilaib: Int) : Int{
+    return nilaia - nilaib
+}
+
+fun kali(nilaia: Int, nilaib: Int) : Int{
+    return nilaia * nilaib
+}
+
+fun bagi(nilaia: Int, nilaib: Int) : Int{
+    return nilaia / nilaib
+}
+
+fun segitiga (alas: Int, tinggi: Int, nilai: Double) : Double {
+  return alas * tinggi * nilai
+}
+
+fun persegipanjang (panjang: Int, lebar: Int) : Int {
+    return panjang * lebar
+}
+
+fun main() {
+rapot("rasy", 350, 10)
+sekola("rasya", "RPL")
+
+val kelulusan =  lulus("udin", 80, 90, 100, 75, "LULUS")
+print(kelulusan)
+
+val plus = tambah(50, 20)
+print("\n\nIni adalah hasil penjumlahan $plus")
+
+val kureng = kurang(50, 20)
+print("\nIni adalah hasil penjumlahan $kureng")
+
+val kalii = kali(50, 20)
+print("\nIni adalah hasil penjumlahan $kalii")
+
+val bagi = bagi(60, 20)
+print("\nIni adalah hasil penjumlahan $bagi")
+
+val luas = segitiga(10,23,0.5)
+print("\n\nluas segitiga adalah $luas")
+
+val luass = persegipanjang(10,22)
+print("\nLuas persegi panjang adalah $luass")
+}
+
+
+
