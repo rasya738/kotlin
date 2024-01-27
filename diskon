@@ -1,0 +1,23 @@
+fun itembarang(item: String): Int {
+    return when (item) {
+        "Baju" -> 110000
+        "Topi" -> 15000
+        else -> 0
+    }
+}
+
+fun diskon(harga: Int): Int {
+    return if (harga > 100000) {
+        (harga * 0.05).toInt()
+    } else {
+        0
+    }
+}
+
+fun main() {
+    val item = "Baju"
+    val harga = itembarang(item)
+    val diskon = diskon(harga)
+    val hargaSetelahDiskon = harga - diskon
+    println("Harga $item adalah $harga, \ndiskon 5% adalah $diskon, \nharga setelah diskon adalah $hargaSetelahDiskon")
+}
